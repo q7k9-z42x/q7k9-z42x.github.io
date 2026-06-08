@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Daily Returns</title>
 <style>
 @font-face { font-family: 'Poppins'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/poppins-400-normal.woff2') format('woff2'); }
@@ -26,9 +29,9 @@ body {
   margin: 0; padding: 24px; background: #F4F4F6; color: var(--char);
 }
 .wrap { max-width: 1200px; margin: 0 auto; background: var(--bg); border-radius: 8px; box-shadow: 0 4px 18px rgba(0,0,0,0.07); overflow: hidden; }
-header { background: var(--char); color: var(--yellow); padding: 18px 24px; }
+header { background: var(--char); color: var(--yellow); padding: 18px 24px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; border-bottom: 3px solid var(--yellow); }
 header h1 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: 0.2px; }
-.asof { text-align: center; padding: 12px 0; font-size: 16px; font-weight: 600; color: var(--subgrey); background: var(--bg); border-bottom: 3px solid var(--yellow); }
+.asof-inline { font-size: 14px; font-weight: 600; color: var(--yellow); white-space: nowrap; }
 .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 24px; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th { background: var(--yellow); color: var(--char); font-weight: 700; padding: 10px 12px; text-align: left; border: 1px solid #B89000; }
@@ -53,8 +56,10 @@ footer code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 </head>
 <body>
 <div class="wrap">
-  <header><h1>YTD Latest Returns (%)</h1></header>
-  <div class="asof">As of&nbsp;&nbsp;04-Jun</div>
+  <header>
+    <h1>YTD Latest Returns (%)</h1>
+    <div class="asof-inline">As of&nbsp;&nbsp;04-Jun</div>
+  </header>
   <div class="panels">
     <div class="panel"><table>
       <thead><tr><th>Fund</th><th>Return</th></tr></thead>
@@ -100,7 +105,7 @@ footer code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
       </tbody>
     </table></div>
   </div>
-  <footer>Last updated 8th Jun 2026, 09:05</footer>
+  <footer>Last updated 8th Jun 2026, 13:49</footer>
 </div>
 </body>
 </html>
