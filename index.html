@@ -29,10 +29,9 @@ body {
   margin: 0; padding: 24px; background: #F4F4F6; color: var(--char);
 }
 .wrap { max-width: 1200px; margin: 0 auto; background: var(--bg); border-radius: 8px; box-shadow: 0 4px 18px rgba(0,0,0,0.07); overflow: hidden; }
-header { background: var(--char); color: var(--yellow); padding: 18px 24px; border-bottom: 3px solid var(--yellow); }
+header { background: var(--char); color: var(--yellow); padding: 18px 24px; }
 header h1 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: 0.2px; }
-.asof-right { text-align: right; font-size: 14px; font-weight: 600; color: var(--char); padding: 0 2px 8px; min-height: 22px; }
-.asof-spacer { min-height: 22px; padding: 0 2px 8px; }
+.asof { text-align: center; padding: 12px 0; font-size: 16px; font-weight: 600; color: var(--subgrey); background: var(--bg); border-bottom: 3px solid var(--yellow); }
 .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 24px; }
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th { background: var(--yellow); color: var(--char); font-weight: 700; padding: 10px 12px; text-align: left; border: 1px solid #B89000; }
@@ -57,13 +56,10 @@ footer code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>YTD Latest Returns (%)</h1>
-  </header>
+  <header><h1>YTD Latest Returns (%)</h1></header>
+  <div class="asof">As of&nbsp;&nbsp;04-Jun</div>
   <div class="panels">
-    <div class="panel">
-      <div class="asof-spacer"></div>
-      <table>
+    <div class="panel"><table>
       <thead><tr><th>Fund</th><th>Return</th></tr></thead>
       <tbody>
         <tr class="banner"><td colspan="2">Global Strategic</td></tr>
@@ -84,11 +80,8 @@ footer code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
         <tr class="fund"><td class="name">MAEI</td><td class="ret pos">50.72</td></tr>
         <tr class="bench"><td class="name">MIAPJ</td><td class="ret pos">64.27</td></tr>
       </tbody>
-    </table>
-    </div>
-    <div class="panel">
-      <div class="asof-right">As of&nbsp;&nbsp;04-Jun</div>
-      <table>
+    </table></div>
+    <div class="panel"><table>
       <thead><tr><th>Fund</th><th>Return</th></tr></thead>
       <tbody>
         <tr class="banner"><td colspan="2">Technology</td></tr>
@@ -101,17 +94,16 @@ footer code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
         <tr class="fund"><td class="name">DPM.GPAC</td><td class="ret pos">5.67</td></tr>
         <tr class="bench"><td class="name">DJIM</td><td class="ret pos">15.35</td></tr>
         <tr class="fund"><td class="name">68KBJ - Port</td><td class="ret pos">10.02</td></tr>
-        <tr class="fund"><td class="name">68KBJ - MFF</td><td class="ret pos">9.44 <span class="ret-note">(As of 03-Jun)</span></td></tr>
-        <tr class="fund"><td class="name">18TCR - MFF</td><td class="ret pos">0.15 <span class="ret-note">(As of 03-Jun)</span></td></tr>
+        <tr class="fund"><td class="name">68KBJ - MFF <span class="ret-note">(As of 03-Jun)</span></td><td class="ret pos">9.44</td></tr>
+        <tr class="fund"><td class="name">18TCR - MFF <span class="ret-note">(As of 03-Jun)</span></td><td class="ret pos">0.15</td></tr>
         <tr class="banner"><td colspan="2">IndoTech (USD) <span class="banner-note">(Inception: 02/03/2026)</span></td></tr>
         <tr class="fund"><td class="name">MYGNETS</td><td class="ret pos">18.78</td></tr>
         <tr class="fund"><td class="name">GTT</td><td class="ret pos">30.41</td></tr>
         <tr class="fund"><td class="name">BNP TECH</td><td class="ret pos">18.75</td></tr>
       </tbody>
-    </table>
-    </div>
+    </table></div>
   </div>
-  <footer>Last updated 8th Jun 2026, 13:53</footer>
+  <footer>Last updated 8th Jun 2026, 14:11</footer>
 </div>
 </body>
 </html>
