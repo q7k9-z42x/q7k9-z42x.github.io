@@ -127,6 +127,8 @@ const nextBtn = document.getElementById('nextDay');
 const panelLeft = document.getElementById('panelLeft');
 const panelRight = document.getElementById('panelRight');
 
+// Always open on the LATEST date (last entry in the chronologically-sorted list).
+// If a stale cache or future change ever leaves curIdx behind, this still wins.
 let curIdx = DATA.dates.length - 1;
 
 function getLatest(values, upToIdx) {
